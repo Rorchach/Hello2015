@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>你好2015</title>
+
+	<style>
+		body{
+			background-size: cover;
+			background-image: url(newyear1.jpeg);
+			background-repeat: no-repeat;
+		}
+		.snowbg{width:100%;height:600px;clear:both;margin:0 auto;position:relative;overflow:hidden;}
+		.snow{position:absolute;top:0;color:#fff;}
+	</style>
+</head>
+<body>
+	<div class="snowbg"></div>
+	
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script>
+	$(function(){
+	    var d="<div class='snow'>❅<div>"
+			setInterval(function(){
+				var f=$(document).width();
+				var e=Math.random()*f-100;
+				var o=0.3+Math.random();
+				var fon=10+Math.random()*30;
+				var l = e - 100 + 200 * Math.random();
+				var k=2000 + 5000 * Math.random();
+				$(d).clone().appendTo(".snowbg").css({
+					left:e+"px",
+					opacity:o,
+					"font-size":fon,
+				}).animate({
+				  top:"400px",
+					left:l+"px",
+					opacity:0.1,
+				},k,"linear",function(){$(this).remove()})
+			},200)
+	})
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "Hello2015",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rorchach/Hello2015"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rorchach/Hello2015/issues"
+  },
+  "homepage": "https://github.com/Rorchach/Hello2015",
+  "devDependencies": {
+    "ejs": "^1.0.0",
+    "express": "^4.10.6",
+    "jquery": "^2.1.3"
+  }
+}
