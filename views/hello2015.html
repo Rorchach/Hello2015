@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>你好2015</title>
-
+	
+	<link rel="stylesheet" href="public/lib/jquery-letterfx/jquery-letterfx.css">
 	<style>
 		body{
 			padding: 0;
@@ -14,6 +15,14 @@
 			display: block;
 			margin: 0 auto 0;
 		}
+		.tagline {
+			position: fixed;
+			width: 100%;
+			top: 100px;
+			text-align: center;
+			font-size: 24px;
+			color: #fff;
+		}
 		.snowbg{
 			width:100%;
 			height:600px;
@@ -23,16 +32,32 @@
 			position: fixed;
 			top: 0;
 		}
-		.snow{position:absolute;top:0;color:#fff;}
+		.snow{
+			position:absolute;
+			top:0;
+			color:#fff;
+		}
 	</style>
 </head>
 <body>
+	<p class="tagline">
+		2015&middot;新年快乐&middot;胡阳
+	</p>
+
 	<img id="newyear-img" src="newyear1.jpeg">
+	
 	<div class="snowbg"></div>
 	
+
+
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="public/lib/jquery-letterfx/tuxsudo.min.js"></script>
+	<script src="public/lib/jquery-letterfx/jquery-letterfx.js"></script>
+
 	<script>
 	$(function(){
+		$(".tagline").letterfx({"fx":"swirl"});
+
 	    var d="<div class='snow'>❅<div>"
 			setInterval(function(){
 				var f=$(document).width();
