@@ -12,4 +12,4 @@ bower install
 
 ### Visit
 
-(http://cdn.hooke.site/happy2015/views/)[http://cdn.hooke.site/happy2015/views/]
+[http://cdn.hooke.site/happy2015/views/](http://cdn.hooke.site/happy2015/views/)
